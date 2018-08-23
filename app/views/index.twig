@@ -1,6 +1,18 @@
 {% extends 'layout.twig' %}
 
+{% block navbar %}
+  {% include 'navbar.twig' %}
+{% endblock %}
+
 {% block body %}
+
   <h1>{{title}}</h1>
   <p>Welcome to {{title}}</p>
+
 {% endblock %}
+
+{% block footer %}
+  {% include 'footer.twig' %}
+{% endblock %}
+
+

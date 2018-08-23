@@ -1,8 +1,21 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: black;
+  color: #564d4d;
 }
 
 a {
   color: #00B7FF;
+}
+
+button {
+  background-color: Transparent;
+  border: 1px solid #564d4d;
+  color: #564d4d;
+}
+
+.social-item{
+  margin: 0 0.5em;
+  font-size: 30px;
 }
