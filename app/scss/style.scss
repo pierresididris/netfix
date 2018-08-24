@@ -314,3 +314,37 @@ footer {
 .text-center {
   text-align: center;
 }
+
+
+//************************ LOGIN PAGE  ************************//
+
+.login-section{
+  background-color: black;
+  .login-title{
+    font-size: 40px;
+    color: red;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .block-login{
+    .ident{
+      color: black;
+      font-size: 25px;
+    }
+    background-color: white;
+    margin: auto;
+    .form-group{
+      label{
+        color: black;
+      }
+      .form{
+        margin: auto;
+      }
+    }
+    .block-button{
+      button{
+        width: 100%;
+      }
+    }
+  }
+}
