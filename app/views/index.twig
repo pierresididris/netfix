@@ -1,112 +1,175 @@
-{% extends 'layout.twig' %}
+ {% extends 'layout.twig' %}
 
-{% block navbar %}
-  {% include 'navbar.twig' %}
-{% endblock %}
+ {% block body %}
 
-{% block body %}
-
-<div class="container">
-
-   <section id="row1">
-   <h1 class="sectionTitle">Continue Watching for Username</h1>
-  <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Movie 1</a>
-  
-</div>
-   
-   <div class="examples">
-      <ul class="img-list">
-         <li class="image">
-            <a href="#">
-               <img id="box1" src="http://placehold.it/280x150" width="280" height="150" />
-               <span class="text-content"><span>Title Here...<br><br><i class="fa fa-4x  fa-play-circle-o"></i><br><br><i class="fa fa-chevron-down" onclick="openNav()" aria-hidden="true"></i></span></span>
+ <div class="container">
+      <section class="movies">
+        <h2>Récemment ajoutés</h2>
+        <article>
+          <div class="movie">
+            <a href="">
+              <img src="/uploads/movies/1.webp">
+                <div class="movie__overlay">
+                  <span>La Reine des dâmes</span>
+                </div>
             </a>
-         </li>
-        
-
-         <li class="image">
-            <a href="#">
-               <img src="http://placehold.it/280x150" width="280" height="150" />
-               <span class="text-content"><span>Title Here...<br><br><i class="fa fa-4x  fa-play-circle-o"></i><br><br><i class="fa fa-chevron-down" aria-hidden="true"></i></span></span>
+          </div>
+          <div class="movie">
+            <a href="">
+              <img src="/uploads/movies/2.webp">
+                <div class="movie__overlay">
+                  <span>La Reine des dâmes</span>
+                </div>
             </a>
-         </li>
-
-         <li class="image">
-            <a href="#">
-               <img src="http://placehold.it/280x150" width="280" height="150" />
-               <span class="text-content"><span>Title Here...<br><br><i class="fa fa-4x  fa-play-circle-o"></i><br><br><i class="fa fa-chevron-down" aria-hidden="true"></i></span></span>
+          </div>
+          <div class="movie">
+            <a href="">
+              <img src="/uploads/movies/3.webp">
+                <div class="movie__overlay">
+                  <span>La Reine des dâmes</span>
+                </div>
             </a>
-         </li>
+          </div>
+          <div class="movie">
+            <a href="">
+              <img src="/uploads/movies/4.webp">
+                <div class="movie__overlay">
+                  <span>La Reine des dâmes</span>
+                </div>
+            </a>
+          </div>
+          <div class="movie">
+            <a href="">
+              <img src="/uploads/movies/5.webp">
+                <div class="movie__overlay">
+                  <span>La Reine des dâmes</span>
+                </div>
+            </a>
+          </div>
+          <div class="movie">
+            <a href="">
+              <img src="/uploads/movies/6.webp">
+                <div class="movie__overlay">
+                  <span>La Reine des dâmes</span>
+                </div>
+            </a>
+          </div>
+        </article>
+      </section>
+      <section class="movies">
+        <h2>Films d'action</h2>
+        <article>
+          <div class="movie">
+            <a href="">
+              <img src="/uploads/movies/7.webp">
+                <div class="movie__overlay">
+                  <span>La Reine des dâmes</span>
+                </div>
+            </a>
+          </div>
+          <div class="movie">
+            <a href="">
+              <img src="/uploads/movies/8.webp">
+                <div class="movie__overlay">
+                  <span>La Reine des dâmes</span>
+                </div>
+            </a>
+          </div>
+          <div class="movie">
+            <a href="">
+              <img src="/uploads/movies/9.webp">
+                <div class="movie__overlay">
+                  <span>La Reine des dâmes</span>
+                </div>
+            </a>
+          </div>
+          <div class="movie">
+            <a href="">
+              <img src="/uploads/movies/10.webp">
+                <div class="movie__overlay">
+                  <span>La Reine des dâmes</span>
+                </div>
+            </a>
+          </div>
+          <div class="movie">
+            <a href="">
+              <img src="/uploads/movies/5.webp">
+                <div class="movie__overlay">
+                  <span>La Reine des dâmes</span>
+                </div>
+            </a>
+          </div>
+          <div class="movie">
+            <a href="">
+              <img src="/uploads/movies/6.webp">
+                <div class="movie__overlay">
+                  <span>La Reine des dâmes</span>
+                </div>
+            </a>
+          </div>
+        </article>
+      </section>
+    </div>
 
+    <footer class="center size-90">
+      <p>
+        Questions? Call <a href="tel:900 866 617">900 866 617</a>
+      </p>
+
+      <ul class="columns flex-wrap">
+        <li class="column is-25">
+          <a href="https://help.netflix.com/support/412"><span>FAQ</span></a>
+        </li>
+        <li class="column is-25">
+          <a href="https://help.netflix.com"><span>Help Center</span></a>
+        </li>
+        <li class="column is-25">
+          <a href="https://www.netflix.com/yourAccount"><span>Account</span></a>
+        </li>
+        <li class="column is-25">
+          <a href="https://media.netflix.com/"><span>Media Center</span></a>
+        </li>
+        <li class="column is-25">
+          <a href="http://ir.netflix.com/"><span>Investor Relations</span></a>
+        </li>
+        <li class="column is-25">
+          <a href="https://jobs.netflix.com/jobs"><span>Jobs</span></a>
+        </li>
+        <li class="column is-25">
+          <a href="https://www.netflix.com/redeem"><span>Gift Cards</span></a>
+        </li>
+        <li class="column is-25">
+          <a href="https://www.netflix.com/watch"><span>Ways to Watch</span></a>
+        </li>
+        <li class="column is-25">
+          <a href="https://help.netflix.com/legal/termsofuse"><span>Terms of Use</span></a>
+        </li>
+        <li class="column is-25">
+          <a href="https://help.netflix.com/legal/privacy"><span>Privacy</span></a>
+        </li>
+        <li class="column is-25">
+          <a href="https://help.netflix.com/legal/privacy#cookies"><span>Cookie Preferences</span></a>
+        </li>
+        <li class="column is-25">
+          <a href="https://fast.com"><span>Speed Test</span></a>
+        </li>
+        <li class="column is-25">
+          <a href="https://www.netflix.com/es-en/originals"><span>Netflix Originals</span></a>
+        </li>
       </ul>
 
-   </div>
+      <div id="lang-selection">
+        <i class="fa fa-globe" aria-hidden="true"></i>
+        <select tabindex="0">
+          <option value="es">Español</option>
+          <option selected value="fr">Français</option>
+        </select>
+      </div>
 
-   </section>
-   
-   <section id="row2">
-   <h1 class="sectionTitle">TV Shows</h1>
-   <div class="examples">
-      <ul class="img-list">
-         <li class="image">
-            <a href="#">
-               <img src="http://placehold.it/280x150" width="280" height="150" />
-               <span class="text-content"><span>Title Here...<br><br><i class="fa fa-4x  fa-play-circle-o"></i><br><br><i class="fa fa-chevron-down" aria-hidden="true"></i></span></span>
-            </a>
-         </li>
+      <p id="company">Netflix France</p>
+    </footer>
 
-         <li class="image">
-            <a href="#">
-               <img src="http://placehold.it/280x150" width="280" height="150" />
-               <span class="text-content"><span>Title Here...<br><br><i class="fa fa-4x  fa-play-circle-o"></i><br><br><i class="fa fa-chevron-down" aria-hidden="true"></i></span></span>
-            </a>
-         </li>
-
-         <li class="image">
-            <a href="#">
-               <img src="http://placehold.it/280x150" width="280" height="150" />
-               <span class="text-content"><span>Title Here...<br><br><i class="fa fa-4x  fa-play-circle-o"></i><br><br><i class="fa fa-chevron-down" aria-hidden="true"></i></span></span>
-            </a>
-         </li>
-
-      </ul>
-   </div>
-   </section>
-   <h1 class="sectionTitle">Row 3</h1>
-   <div class="examples">
-      <ul class="img-list">
-         <li class="image">
-            <a href="#">
-               <img src="http://placehold.it/280x150" width="280" height="150" />
-               <span class="text-content"><i class="fa fa-chevron-up" aria-hidden="true"></i><br><br><i class="fa fa-4x  fa-play-circle-o"></i><br><br>Title Here...</span></span>
-            </a>
-         </li>
-
-         <li class="image">
-            <a href="#">
-               <img src="http://placehold.it/280x150" width="280" height="150" />
-               <span class="text-content"><i class="fa fa-chevron-up" aria-hidden="true"></i><br><br><i class="fa fa-4x  fa-play-circle-o"></i><br><br>Title Here...</span></span>
-            </a>
-         </li>
-
-         <li class="image">
-            <a href="#">
-               <img src="http://placehold.it/280x150" width="280" height="150" />
-               <span class="text-content"><i class="fa fa-chevron-up" aria-hidden="true"></i><br><br><i class="fa fa-4x  fa-play-circle-o"></i><br><br>Title Here...</span></span>
-            </a>
-         </li>
-
-      </ul>
-   </div>
-</div>
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="public/js/app.js"></script>
+  </body>
 {% endblock %}
-
-{% block footer %}
-  {% include 'footer.twig' %}
-{% endblock %}
-
-
