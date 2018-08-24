@@ -7,7 +7,8 @@ router.get('/', function(req, res, next) {
   if(!req.user){
     res.redirect('/users/login');
   }
-  res.render('index');
+  console.log(req.user);
+  res.render('index', {user: req.user});
 });
 
 module.exports = router;

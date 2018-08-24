@@ -15,11 +15,11 @@ router.post('/', (req, res, next) => {
 		email: r.email,
 	}).then(function() {
 		//req.flash('success', "L'utilisateur a bien été ajouté.");
-		res.redirect('/users');
+		res.redirect('/');
 	}).catch((err) => {
 		//req.flash('errors', err.message);
 		console.log('err : ', err);
-		res.redirect('/users');
+		res.redirect('/');
 	});
 });
 

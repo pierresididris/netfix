@@ -39,7 +39,7 @@ passport.use(new LocalStrategy(
 ));
 
 router.get('/', function(req, res, next) {
-  res.render('users/login', { user : req.user });
+  res.render('users/login');
 });
 
 router.post('/', passport.authenticate('local', { failureRedirect: '/users/login' }), (req, res) => {
