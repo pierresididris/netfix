@@ -1,0 +1,27 @@
+
+{% extends 'users/layout.twig' %}
+
+{% block body %}
+<section class="login-section">
+    <div class="block-login col-7">
+        <form action="#" method="post">
+            <span class="ident">S'identifier</span>
+            <div class="form-group">
+                <label for="example-email-input" class="col-11 col-form-label">Username</label>
+            <div class="form">
+                <input name="username" class="form-control" type="text" placeholder="username" id="example-email-input">
+                <small id="emailHelp" class="form-text text-muted">Veuillez entrer une adresse email valide.</small>
+            </div>
+            <label for="example-password-input" class="col-2 col-form-label">Password</label>
+            <div class="form">
+                <input name="password" class="form-control" type="password" placeholder="hunter2" id="example-password-input">
+                <small id="emailHelp" class="form-text text-muted">Votre mot de passe doit comproter entre 4 et 60 caractères.</small>
+            </div>
+            <div class="block-button">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
