@@ -2,7 +2,7 @@
 module.exports = (sequelize, DataTypes) => {
   const MovieGenre = sequelize.define('MovieGenre', {
     movie_id: DataTypes.INTEGER,
-    genre_id: DataType.INTEGER
+    genre_id: DataTypes.INTEGER
   }, {
     freezeTableName: true,
   });

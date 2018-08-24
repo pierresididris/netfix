@@ -249,3 +249,23 @@ footer {
 
 .text-center {
   text-align: center; }
+
+.login-section {
+  background-color: black; }
+  .login-section .login-title {
+    font-size: 40px;
+    color: red;
+    text-transform: uppercase;
+    font-weight: 700; }
+  .login-section .block-login {
+    background-color: white;
+    margin: auto; }
+    .login-section .block-login .ident {
+      color: black;
+      font-size: 25px; }
+    .login-section .block-login .form-group label {
+      color: black; }
+    .login-section .block-login .form-group .form {
+      margin: auto; }
+    .login-section .block-login .block-button button {
+      width: 100%; }
